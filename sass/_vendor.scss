@@ -11,8 +11,16 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 0;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   word-wrap: break-word
+}
+
+pre > code, code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+img {
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -180,7 +188,6 @@ a:hover {
 .hack, .hack blockquote, .hack code, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong {
   font-size: 1rem;
   font-style: normal;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif
 }
 
 .hack blockquote, .hack code, .hack em, .hack strong {
@@ -193,8 +200,16 @@ a:hover {
   padding: 0
 }
 
+article {
+  margin-top: 1em;
+}
+
 .hack header + article {
   margin-top: 20px;
+}
+
+.hack header {
+  margin-bottom: 15px;
 }
 
 .hack blockquote, .hack h1, .hack ol, .hack p, .hack ul {
@@ -206,16 +221,9 @@ a:hover {
   position: relative;
   display: inline-block;
   display: table-cell;
-  padding: 20px 0 30px;
+  padding: 5px 0 0 0;
   margin: 0;
   overflow: hidden
-}
-
-.hack h1:after {
-  content: "====================================================================================================";
-  position: absolute;
-  bottom: 10px;
-  left: 0
 }
 
 .hack h1 + * {
@@ -224,31 +232,11 @@ a:hover {
 
 .hack h2, .hack h3, .hack h4, .hack h5, .hack h6 {
   position: relative;
-  margin-bottom: 0.1rem
+  margin-bottom: 0.2rem
 }
 
 .hack h2:before, .hack h3:before, .hack h4:before, .hack h5:before, .hack h6:before {
   display: inline
-}
-
-.hack h2:before {
-  content: "## "
-}
-
-.hack h3:before {
-  content: "### "
-}
-
-.hack h4:before {
-  content: "#### "
-}
-
-.hack h5:before {
-  content: "##### "
-}
-
-.hack h6:before {
-  content: "###### "
 }
 
 .hack li {
@@ -292,22 +280,12 @@ a:hover {
   line-height: 20px
 }
 
-.hack em:after, .hack em:before {
-  content: "*";
-  display: inline
-}
-
 .hack pre code:after, .hack pre code:before {
   content: none
 }
 
 .hack code {
   font-weight: 700
-}
-
-.hack code:after, .hack code:before {
-  content: "`";
-  display: inline
 }
 
 .hack hr {
