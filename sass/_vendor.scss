@@ -11,7 +11,8 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  // font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   word-wrap: break-word
 }
 
@@ -24,7 +25,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.3em
+  // line-height: 1.3em
 }
 
 fieldset {
@@ -188,6 +189,8 @@ a:hover {
 .hack, .hack blockquote, .hack code, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong {
   font-size: 1rem;
   font-style: normal;
+  // font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hack blockquote, .hack code, .hack em, .hack strong {
@@ -213,17 +216,24 @@ article {
 }
 
 .hack blockquote, .hack h1, .hack ol, .hack p, .hack ul {
-  margin-top: 20px;
-  margin-bottom: 20px
+  margin-top: 3px;
+  margin-bottom: 3px
 }
 
 .hack h1 {
   position: relative;
   display: inline-block;
   display: table-cell;
-  padding: 5px 0 0 0;
+  padding: 20px 0 3px;
   margin: 0;
   overflow: hidden
+}
+
+.hack h1:after {
+  // content: "====================================================================================================";
+  position: absolute;
+  bottom: 10px;
+  left: 0
 }
 
 .hack h1 + * {
@@ -232,12 +242,33 @@ article {
 
 .hack h2, .hack h3, .hack h4, .hack h5, .hack h6 {
   position: relative;
-  margin-bottom: 0.2rem
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem
 }
 
 .hack h2:before, .hack h3:before, .hack h4:before, .hack h5:before, .hack h6:before {
   display: inline
 }
+
+// .hack h2:before {
+//   content: "## "
+// }
+
+// .hack h3:before {
+//   content: "### "
+// }
+
+// .hack h4:before {
+//   content: "#### "
+// }
+
+// .hack h5:before {
+//   content: "##### "
+// }
+
+// .hack h6:before {
+//   content: "###### "
+// }
 
 .hack li {
   position: relative;
@@ -845,7 +876,7 @@ select.form-control {
 }
 
 .dark {
-  color: #ccc
+  color: #eee
 }
 
 .dark, .dark pre {
